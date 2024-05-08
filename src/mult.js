@@ -1,4 +1,4 @@
 const mult = (a,b) => a*b
 
 
-module.exports = mult
+module.exports = mult;

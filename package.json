@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src/**",
+    "lint-fix": "eslint src/** --fix"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +18,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": " npm run lint && npm test"
     }
   }
 }
